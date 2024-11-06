@@ -1,8 +1,10 @@
 @import url('https://fonts.cdnfonts.com/css/helvetica-neue-55');
+
 body {
     margin: 0;
     padding: 0;
 }
+
 .main-div {
     display: flex;
     flex-direction: column;
@@ -13,22 +15,26 @@ body {
     font: 400 16px "Helvetica Neue", sans-serif;
     user-select: none;
 }
+
 .main-div h1 {
     font-size: 3rem;
     margin: 0;
     text-align: center;
     font-family: "Helvetica Neue", sans-serif;
 }
+
 .main-div h2 {
     font-size: 1.8rem;
     text-align: center;
     font-family: "Helvetica Neue", sans-serif;
     margin: 1rem 0 0;
 }
+
 .container_dark, .container_bright {
     transition: background-color 0.4s ease, color 0.4s ease;
     animation: fadein 2s;
 }
+
 @keyframes fadein {
     from {
         opacity: 0;
@@ -37,16 +43,19 @@ body {
         opacity: 1;
     }
 }
+
 .container_dark {
     background-color: #000000;
     color: #f5f5f5;
     border-color: #f5f5f5;
 }
+
 .container_bright {
     background-color: #f5f5f5;
     color: #000000;
     border-color: #000000;
 }
+
 .social-media_container {
     display: flex;
     flex-direction: row;
@@ -57,6 +66,7 @@ body {
     height: 5rem;
     margin-top: 2rem;
 }
+
 .social-media_icon {
     margin: 0 0.5rem;
     width: 2rem;
@@ -64,12 +74,15 @@ body {
     cursor: pointer;
     transition: transform 0.4s ease;
 }
+
 .social-media_icon:hover {
     transform: scale(1.2);
 }
+
 .social-media_icon:active {
     transform: scale(0.8);
 }
+
 footer {
     display: flex;
     flex-direction: row;
@@ -78,9 +91,11 @@ footer {
     text-align: center;
     font: 400 16px "Helvetica Neue", sans-serif;
 }
+
 .andrea-container {
     margin-top: 40%;
 }
+
 .andrea-container img {
     width: 40%;
     height: 25%;
@@ -93,9 +108,11 @@ footer {
     cursor: pointer;
     transition: transform 0.4s ease;
 }
+
 .andrea-container img:hover {
     transform: scale(1.1);
 }
+
 .andrea-title {
     text-align: center;
     font: 400 40px "Helvetica Neue", sans-serif;

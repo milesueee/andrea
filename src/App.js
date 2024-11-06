@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, {useState} from 'react';
 import './App.css';
 import AndreaContainer from './components/AndreaContainer';
 
@@ -27,11 +27,11 @@ export default function App() {
 
             <div className="social-media_container">
                 <a href="https://github.com/milesueee">
-                    <img className="social-media_icon" src={githubSrc} alt="github" />
+                    <img className="social-media_icon" src={githubSrc} alt="github"/>
                 </a>
             </div>
 
-            <AndreaContainer andrea={andrea} />
+            <AndreaContainer andrea={andrea}/>
 
             <footer>There isn&apos;t really anything else in here unless if mag send ka ug lain pics hehe</footer>
         </div>

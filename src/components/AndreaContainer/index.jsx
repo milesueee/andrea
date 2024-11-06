@@ -1,7 +1,7 @@
 import React from 'react';
 import '../../App.css';
 
-export default function AndreaContainer({ andrea }) {
+export default function AndreaContainer({andrea}) {
     return (
         <div className='andrea-container'>
             <h2 className='andrea-title'>
@@ -18,7 +18,7 @@ export default function AndreaContainer({ andrea }) {
                                     Your browser does not support the video tag.
                                 </video>
                             ) : (
-                                <img className='andrea' src={url} alt={`andrea ${index}`} />
+                                <img className='andrea' src={url} alt={`andrea ${index}`}/>
                             )}
                         </div>
                     );
