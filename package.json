@@ -1,6 +1,6 @@
 {
   "homepage": "http://TheDokT0r.github.io/my-website",
-  "name": "my-website",
+  "name": "andrea",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -44,5 +44,9 @@
   },
   "devDependencies": {
     "gh-pages": "^5.0.0"
-  }
+  },
+  "description": "So like, just browse my page I guess lol",
+  "main": "index.js",
+  "author": "milesueee",
+  "license": "ISC"
 }

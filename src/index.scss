@@ -1,6 +1,8 @@
+@import url('https://fonts.cdnfonts.com/css/helvetica-neue-55');
+
 body {
     margin: 0;
-    padding: 0
+    padding: 0;
 }
 
 
@@ -12,20 +14,21 @@ body {
     height: 100%;
     width: 100%;
 
-    font: 400 16px Roboto, sans-serif;
+    font: 400 16px "Helvetica Neue", sans-serif;
 
     h1 {
         font-size: 3rem;
         margin: 0;
         text-align: center;
+        font-family: "Helvetica Neue", sans-serif;
     }
 
     h2 {
         font-size: 1.8rem;
-        margin: 0;
         text-align: center;
+        font-family: "Helvetica Neue", sans-serif;
 
-        margin-top: 1rem;
+        margin: 1rem 0 0;
     }
 
     user-select: none;
@@ -109,8 +112,9 @@ footer {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    text-align: center;
 
-    font: 400 16px Roboto, sans-serif;
+    font: 400 16px "Helvetica Neue", sans-serif;
 
     // // Stick to the element above
     // position: absolute;
@@ -119,7 +123,7 @@ footer {
     // height: 5rem;
 }
 
-.monke-container {
+.andrea-container {
     margin-top: 40%;
 
     img {
@@ -145,11 +149,8 @@ footer {
     }
 }
 
-.monkes-title {
-    font-size: 2rem;
-    margin: 0;
-
+.andrea-title {
     text-align: center;
-    font: 400 40px Roboto, sans-serif;
-    margin-bottom: 2.5rem;
+    font: 400 40px "Helvetica Neue", sans-serif;
+    margin: 0 0 2.5rem;
 }

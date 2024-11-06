@@ -1,56 +1,39 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import './index.scss';
-import { DarkModeSwitch } from 'react-toggle-dark-mode';
-import MonkesContainer from './components/MonkesContainer';
+import AndreaContainer from './components/AndreaContainer';
 
 export default function App() {
-    const [darkMode, setDarkMode] = useState(false);
-    const [githubSrc, setGithubSrc] = useState('https://i.imgur.com/qkgfyLX.png');
-    const monkes = [
-        'https://i.imgur.com/LV7NUKd.jpg',
-        'https://i.imgur.com/8CGJNqc.jpg',
-        'https://i.imgur.com/BYepVRx.jpg',
-        'https://i.imgur.com/feJr7O7.jpg',
+    const [githubSrc,] = useState('https://i.imgur.com/qkgfyLX.png');
+    const andrea = [
+        'https://imgur.com/dYXPavz.jpg',
+        'https://imgur.com/eo3R9cF.jpg',
+        'https://imgur.com/J7diTD7.jpg',
+        'https://imgur.com/uMCXwL6.jpg',
+        'https://imgur.com/6nDtX8l.jpg',
+        'https://imgur.com/UiE5Kzg.jpg',
+        'https://imgur.com/DYAHBKf.jpg',
+        'https://imgur.com/hoJU7gX.mp4',
+        'https://imgur.com/XTMPUBZ.mp4',
     ];
 
-    useEffect(() => {
-        const storedDarkMode = JSON.parse(localStorage.getItem('darkMode'));
-        if (storedDarkMode !== null) {
-            setDarkMode(storedDarkMode);
-        }
-    }, []);
-
-    useEffect(() => {
-        if (darkMode) {
-            setGithubSrc('https://i.imgur.com/AwgrBOi.png');
-        } else {
-            setGithubSrc('https://i.imgur.com/qkgfyLX.png');
-        }
-        localStorage.setItem('darkMode', JSON.stringify(darkMode));
-    }, [darkMode]);
 
     return (
-        <div className={darkMode ? 'container_dark' : 'container_bright'}>
-            <DarkModeSwitch
-                style={{ marginBottom: '2rem' }}
-                checked={darkMode}
-                onChange={setDarkMode}
-                size={40}
-            />
+        <div className={'container_bright'}>
+
             <div className="main-div">
-                <h1>Welcome to my website kind stranger</h1>
-                <h2>Stay as long as you&apos;d like</h2>
+                <h1>helloooo</h1>
+                <h2>imo pics/highlights smth</h2>
             </div>
 
             <div className="social-media_container">
-                <a href="https://github.com/TheDokT0r">
+                <a href="https://github.com/milesueee">
                     <img className="social-media_icon" src={githubSrc} alt="github" />
                 </a>
             </div>
 
-            <MonkesContainer monkes={monkes} />
+            <AndreaContainer andrea={andrea} />
 
-            <footer>There isn&apos;t really anything else in here</footer>
+            <footer>There isn&apos;t really anything else in here unless if mag send ka ug lain pics hehe</footer>
         </div>
     );
 }
