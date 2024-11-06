@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './index.scss';
+import './App.css';
 import AndreaContainer from './components/AndreaContainer';
 
 export default function App() {
